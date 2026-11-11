@@ -1,0 +1,10 @@
+# Index of the CNCF projects hosted in the helm GitHub organization.
+# Documentation: https://github.com/cncf/automation/blob/main/utilities/dot-project/SCHEMA.md#orgyaml
+schema_version: "1.0.0"
+org: "helm"
+
+projects:
+  # Helm website and documentation
+  - id: "helm-www"
+  # Helm (graduated)
+  - id: "helm"

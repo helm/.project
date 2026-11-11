@@ -1,0 +1,35 @@
+# .project metadata for Helm website and documentation
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+schema_version: "1.0.0"
+slug: "helm-www"
+name: "Helm Website"
+description: "The Helm website and documentation"
+type: "project"
+
+maturity_log:
+  - phase: "graduated"
+    date: "2018-06-01T00:00:00Z"
+    issue: "https://github.com/cncf/toc/pull/384"
+
+repositories:
+  - url: "https://github.com/helm/helm-www"
+    primary: true
+
+website: "https://helm.sh/"
+
+artwork: "https://landscape.cncf.io/logos/helm.svg"
+
+governance:
+  contributing:
+    path: "https://github.com/helm/helm-www/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/helm/helm-www/blob/main/code-of-conduct.md"
+
+legal:
+  license:
+    path: "https://github.com/helm/helm-www/blob/main/LICENSE"
+
+documentation:
+  readme:
+    path: "https://github.com/helm/helm-www/blob/main/README.md"

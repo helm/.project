@@ -1,0 +1,49 @@
+# Maintainer roster for Helm
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+# Source: https://github.com/helm/helm/blob/main/OWNERS
+
+#  Maintainers: Please connect your GitHub handle to your LFID on openprofile.dev to enable automatic access to CNCF resources. The system will use your primary email address for setup.
+maintainers:
+  - project_id: "helm"
+    org: "helm"
+    teams:
+      - name: "maintainers"
+        members:
+          - banjoh
+          - gjenkins8
+          - joejulian
+          - marckhouzam
+          - mattfarina
+          - robertsirc
+          - sabre1041
+          - scottrigby
+          - technosophos
+          - TerryHowe
+      # Unmanaged teams: teams with "managed: false" are tracked in this
+      # file for documentation but are excluded from CNCF resource
+      # provisioning (mailing lists, service desk, Copilot seats, etc).
+      - name: "triage"
+        managed: false
+        members:
+          - yxxhero
+          - zonggen
+          - z4ce
+      - name: "emeritus"
+        managed: false
+        members:
+          - adamreese
+          - bacongobbler
+          - fibonacci1729
+          - hickeyma
+          - jascott1
+          - jdolitsky
+          - michelleN
+          - migmartri
+          - nebril
+          - prydonius
+          - rimusz
+          - seh
+          - SlickNik
+          - thomastaylor312
+          - vaikas-google
+          - viglesiasce

@@ -3,7 +3,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'project.yaml'
+      - 'org.yaml'
+      - '*/project.yaml'
   workflow_dispatch:
 
 jobs:
@@ -19,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: Update Landscape
-        uses: cncf/automation/.github/actions/landscape-update@53810a548b46f33421cd67e57d16e4b7251416d9
+        uses: cncf/automation/.github/actions/landscape-update@85e0bcd298817a6e26e286d6b22615f8c81b4e4b
         with:
-          project_file: 'project.yaml'
+          # No project_file input: the action opens one landscape PR per project.
           token: ${{ secrets.LANDSCAPE_REPO_TOKEN }}

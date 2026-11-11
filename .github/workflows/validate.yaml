@@ -3,13 +3,15 @@ name: Validate Project Metadata
 on:
   pull_request:
     paths:
-      - 'project.yaml'
-      - 'maintainers.yaml'
+      - 'org.yaml'
+      - '*/project.yaml'
+      - '*/maintainers.yaml'
   push:
     branches: [main]
     paths:
-      - 'project.yaml'
-      - 'maintainers.yaml'
+      - 'org.yaml'
+      - '*/project.yaml'
+      - '*/maintainers.yaml'
   workflow_dispatch:
 
 jobs:
@@ -20,9 +22,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: cncf/automation/.github/actions/validate-project@53810a548b46f33421cd67e57d16e4b7251416d9
-        with:
-          project_file: 'project.yaml'
+      - uses: cncf/automation/.github/actions/validate-project@85e0bcd298817a6e26e286d6b22615f8c81b4e4b
+        # No project_file input: with org.yaml present the action validates every project.
 
   validate-maintainers:
     runs-on: ubuntu-latest
@@ -31,9 +32,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: cncf/automation/.github/actions/validate-maintainers@53810a548b46f33421cd67e57d16e4b7251416d9
+      - uses: cncf/automation/.github/actions/validate-maintainers@85e0bcd298817a6e26e286d6b22615f8c81b4e4b
         with:
-          maintainers_file: 'maintainers.yaml'
+          # No maintainers_file input: the action discovers every maintainers file.
           # Disabled until the LFX LLT issue is resolved. Validation is done manually for now.
           verify_maintainers: 'false'
         env:
