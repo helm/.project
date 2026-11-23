@@ -28,7 +28,7 @@ repositories: # TODO: AUTO-DETECTED primary — please verify
 
 website: "https://helm.sh/"
 
-artwork: "https://landscape.cncf.io/logos/helm.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/helm"
 
 adopters:
   path: "https://github.com/helm/helm/blob/main/ADOPTERS.md"
