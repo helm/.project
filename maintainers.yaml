@@ -10,7 +10,7 @@ maintainers:
     # See: https://github.com/helm/community/tree/main/governance
     teams:
       # See: https://github.com/helm/community/blob/main/MAINTAINERS.md
-      - name: "Helm Org"
+      - name: "Helm Org Maintainers"
         members:
           - technosophos
           - mattfarina
