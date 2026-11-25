@@ -43,7 +43,7 @@ maintainers:
           - technosophos
 
       # See: https://github.com/helm/helm/blob/main/OWNERS
-      - name: "Helm core"
+      - name: "Helm Core"
         managed: false
         members:
           - banjoh
